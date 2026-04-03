@@ -1,0 +1,40 @@
+ 🌍 AirSense – AI-Powered Multi-Agent Air Quality Analytics System
+
+AirSense is a cutting-edge full-stack platform that transforms environmental data into actionable insights. It aggregates PM2.5 and PM10 data from multiple sources, performs AI-based forecasting, and includes an LLM-powered planning agent that understands natural language queries to generate analytics.
+
+🚀 Key Features
+🌐 Multi-Source Data Aggregation
+Real-time scraping: Collects hourly data from sources like Open-Meteo, OpenAQ, IQAir, and WAQI.
+Smart processing: Uses weighted aggregation and outlier trimming to ensure high data reliability.
+Data storage: Cleaned data is stored in MySQL for historical analysis and trend tracking.
+📊 Advanced Analytics & Comparison
+Multi-city KPIs: Compare PM levels across cities (Mean, Min, Max).
+City rankings: Automatically identifies best-performing and most polluted cities.
+Visual insights: Interactive charts for trends and part-to-whole analysis.
+📈 AI-Powered Forecasting
+Time-series modeling: Uses SARIMAX to predict future air quality trends.
+Accuracy metrics: Provides confidence intervals along with MAE and RMSE for validation.
+🤖 LLM-Based Planning Agent (Enterprise Tier)
+Natural language interface: Users can request analysis using simple text (e.g., “Compare Delhi and Mumbai air quality for last week”).
+Agent orchestration: The LLM generates executable plans and interacts with data tools.
+Explainability: Shows execution traces to explain how results were generated.
+🔐 Security & Subscription Tiers
+Authentication: Secure login using JWT and bcrypt hashing.
+Access control: Features are restricted based on Free, Pro, and Enterprise plans.
+🧾 Automated Professional Reporting
+Generate PDF reports with a single click using ReportLab.
+Reports include tables, charts, and AI-generated summaries.
+🧱 System Architecture
+
+Built using a Four-Layer Architecture:
+
+Presentation Layer: React SPA with Tailwind CSS and Recharts for a modern UI/UX
+Application Layer: FastAPI backend for high performance and modular design
+Data Layer: MySQL with SQLAlchemy ORM
+Intelligence Layer: LLM Planner (Ollama/Gemma) for reasoning and task execution
+🛠️ Tech Stack
+Frontend: React.js, Tailwind CSS, Framer Motion, Recharts
+Backend: FastAPI, Uvicorn, Python
+Database: MySQL, SQLAlchemy
+AI/ML: SARIMAX (forecasting), LLM Agent (planning & reasoning)
+Tools: ReportLab (PDF generation), JWT (authentication), Bcrypt
