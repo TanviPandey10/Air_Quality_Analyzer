@@ -1,4 +1,4 @@
-🌍 AirSense – AI-Powered Multi-Agent Air Quality Analytics System
+ AirSense – AI-Powered Multi-Agent Air Quality Analytics System
 
 AirSense is a cutting-edge full-stack platform that transforms environmental data into actionable insights. It aggregates PM2.5 and PM10 data from multiple sources, performs AI-based forecasting, and includes an LLM-powered planning agent that understands natural language queries to generate analytics.
 
